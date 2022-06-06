@@ -2,30 +2,32 @@
 //Current User variable
 let currentUser = "Dennis Kimathi";
 
-let welcomeMessage = "Welcome to Flatbook, ";
+let welcomeMessage = `Welcome to Flatbook, ${currentUser}` + '!';
 
-currentUser = welcomeMessage;
+// const welcomeMessage = 'Welcome to Flatbook, ' + currentUser + '!';
 
-console.log(currentUser)
+console.log( welcomeMessage );
 
-welcomeMessage =  `${currentUser}!`
 
 //Excited Welcome Message Variable
 
-let excitedWelcomeMessage = 'WELCOME TO FLATBOOK, ';
+const excitedWelcomeMessage = welcomeMessage.toUpperCase();
 
 let upperCaseCurrentUser = currentUser.toUpperCase();
 
-excitedWelcomeMessage = `${upperCaseCurrentUser}!`
+console.log(upperCaseCurrentUser);
+
+
 
 //Short Greeting variable
 let shortGreeting = 'Welcome, ';
 
 const firstInitial = currentUser[0];
-const restOfName = currentUser.slice(1);
+const restOfName = currentUser.slice(0,1);
 
-console.log(firstInitial);
+// console.log(firstInitial);
 console.log(restOfName)
 
+shortGreeting = `Welcome, ${restOfName}!`;
 
-shortGreeting = `${shortGreeting}!`
+console.log(shortGreeting);
